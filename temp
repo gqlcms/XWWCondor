@@ -1,0 +1,37 @@
+DATASET=WWW
+INPUTFILE=RunIISummer20UL16MiniAODv2WWW_4F_TuneCP5_13TeV-amcatnlo-pythia8106X_mcRun2_asymptotic_v17-v11300005DA583F0-136A-9849-A663-39D03F305B16.root
+YEAR=2016pre
+DATA_MC=m
+INPUTFILEAREA=http://stash.osgconnect.net/+qilongguo/gKK/private_NanoAOD/V1
+
+
+condor_submit /mnt/ceph/connect/user/qilongguo/work/gKK/VVVnano/condor/V1/tasks/WWW/submit.cmd
+condor_submit /mnt/ceph/connect/user/qilongguo/work/gKK/VVVnano/condor/V1/tasks/ZZ/submit.cmd
+
+nohup sh /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//WJetsToQQ_HT-800toInf_APV.sh > /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//WJetsToQQ_HT-800toInf_APV.debug 2>&1 &
+nohup sh /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//TTToSemiLeptonic_APV.sh > /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//TTToSemiLeptonic_APV.debug 2>&1 &
+nohup sh /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//QCD_HT2000toInf_APV.sh > /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//QCD_HT2000toInf_APV.debug 2>&1 &
+nohup sh /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//QCD_HT1000to1500.sh > /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//QCD_HT1000to1500.debug 2>&1 &
+nohup sh /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//ST_tW_antitop.sh > /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//ST_tW_antitop.debug 2>&1 &
+nohup sh /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//ST_t-channel_top_APV.sh > /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//ST_t-channel_top_APV.debug 2>&1 &
+nohup sh /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//TTToHadronic_APV.sh > /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//TTToHadronic_APV.debug 2>&1 &
+nohup sh /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//TTToSemiLeptonic.sh > /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//TTToSemiLeptonic.debug 2>&1 &
+nohup sh /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//WW.sh > /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//WW.debug 2>&1 &
+nohup sh /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//ST_t-channel_antitop_APV.sh > /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//ST_t-channel_antitop_APV.debug 2>&1 &
+nohup sh /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//WW_APV.sh > /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//WW_APV.debug 2>&1 &
+nohup sh /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//QCD_HT1000to1500_APV.sh > /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//QCD_HT1000to1500_APV.debug 2>&1 &
+nohup sh /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//QCD_HT2000toInf.sh > /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//QCD_HT2000toInf.debug 2>&1 &
+nohup sh /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//TTToHadronic.sh > /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//TTToHadronic.debug 2>&1 &
+nohup sh /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//QCD_HT1500to2000_APV.sh > /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//QCD_HT1500to2000_APV.debug 2>&1 &
+nohup sh /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//ST_t-channel_top.sh > /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//ST_t-channel_top.debug 2>&1 &
+nohup sh /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//ZJetsToQQ_HT-800toInf.sh > /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//ZJetsToQQ_HT-800toInf.debug 2>&1 &
+nohup sh /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//WZ.sh > /stash/user/qilongguo/work/gKK/VVVnano/condor/V1/hadd//WZ.debug 2>&1 &
+
+// with different branches
+tasks/WJetsToQQ_HT-800toInf_APV/log/std_logs/11081141.5.out
+
+
+rsync -r -v cmsc:/stash/user/qilongguo/public/gKK/Ntuple/2016/V1/WWW /eos/user/q/qiguo/yunxuan/ROOTFILE/NTuple_Output/UL16/V1
+
+lxplus719.cern.ch
+

@@ -1,0 +1,16 @@
+universe=Vanilla
+RequestMemory = 2048
+RequestCpus = 1
+executable={TaskFolder}/{DatasetFolder}/{excutable}
+transfer_executable=True
+transfer_input_files={transfer_input_files}
+transfer_output_files={transfer_output_files}
+log={log}/$(Cluster).log
+output={std_logs}/$(Cluster).$(Process).out
+error={std_logs}/$(Cluster).$(Process).err
+notification=Never
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+x509userproxy=x509up_u100637
++MaxRuntime={MaxRuntime}
+
